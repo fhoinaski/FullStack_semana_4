@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Negociação na bolsa</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<section class="container-principal">
+  <div class="box-form">
+    <h1>Minhas açoes</h1>
+    <form class="formulario">
+      <label for="data-transacao">Data da transação</label>
+      <input id="data-transacao" type="date">
+      <br>
+      <label for="quantidade-vendida">Quantidade de ações vendidas</label>
+      <input id="quantidade-vendida" type="number" min="1" max="100">
+      <br>
+      <label for="valor-negociacao">Valor da negociação</label>
+      <input id="valor-negociacao" type="number" min="0" max="1000000.0">
+      <br>
+      <button id="registrar-negociacao" type="submit">Registrar negociação</button>
+      <button id="filtrar">Filtrar</button>
+      <input id="valorFiltro" type="number" placeholder="informe o valor">
+    </form>
+  </div>
+  <div class="container-tabela">
+    <table>
+      <thead>
+      <th>Data</th>
+      <th>Quantidade</th>
+      <th>Valor únitario</th>
+      <th>Valor total</th>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<script type="module" src="app/js/main/programa.js"></script>
+</body>
+</html>
