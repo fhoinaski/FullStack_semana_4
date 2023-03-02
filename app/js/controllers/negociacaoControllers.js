@@ -17,27 +17,51 @@ export class NegociacaoController {
         this.#campoQuantidade = document.getElementById('quantidade-vendida');
         this.#campoValor = document.getElementById('valor-negociacao');
         this.filtro = document.getElementById('valorFiltro');
+
     }
 
+// Este método é responsável por criar uma nova negociação a partir dos valores preenchidos no formulário
     criarNegociacao() {
-        //instacia um objeto do tipo data
+// Obtém a data informada no campo data-transacao e cria um objeto Date
         let data = new Date(this.#campoData.value);
-        // cria uma variavel com nome quantidade e atribui a variavel do construtor pegando os valores
+
+// Obtém a quantidade informada no campo quantidade-vendida e converte para número inteiro
         let quantidade = parseInt(this.#campoQuantidade.value);
+
+// Obtém o valor informado no campo valor-negociacao e converte para número decimal
         let valor = parseFloat(this.#campoValor.value);
 
-        /*cria uma variavel comnome negociaçao que recebe uma nova negociaçao da classe Negociaçao dando como parametro os objetos acima data, quantidade e valor*/
+// Verifica se os campos estão todos preenchidos
+        if (!data || !quantidade || !valor) {
+            alert('Por favor, preencha todos os campos');
+            return;
+        }
+
+// Cria um objeto Negociacao com os valores informados
         let negociacao = new Negociacao(data, quantidade, valor);
+
+// Adiciona a nova negociação à lista de negociações e atualiza a tabela
         this.#listaNegociacao.adicionarNegociacao(negociacao);
         this.#negociacoesView.adicionarNegociacao(negociacao);
     }
 
+
     filtrarNegociacao() {
+        // obtém o valor do input
         let valorFiltro = this.filtro.value;
+
+        // imprime o valor do filtro no console
         console.log(valorFiltro);
+
+        // filtra as negociações com valor acima do valor informado no input
         let negociacoesFiltradas = this.#listaNegociacao.filtrarNegociacoesPorValor(valorFiltro);
+
+        // imprime as negociações filtradas no console
         console.log(negociacoesFiltradas);
+
+        // atualiza a view com as negociações filtradas
         this.#negociacoesView.atualizarFiltro(negociacoesFiltradas);
     }
+
 
 }
