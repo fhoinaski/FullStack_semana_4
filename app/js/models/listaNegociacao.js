@@ -11,8 +11,8 @@ get negociacoes(){
     return[].concat(this.#negociacoes);
 }
 
-//metodo para filtrar os valores recebidos no input filtro e retornar umalista com negociacios de valores iguais ou
-// aicma do informado
+/*metodo para filtrar os valores recebidos no input filtro e retornar umalista com negociações de valortotal iguais
+ ou acima do informado */
     filtrarNegociacoesPorValor(valorMinimo) {
         return this.#negociacoes.filter(negociacao => negociacao.valorTotal >= valorMinimo);
     }
