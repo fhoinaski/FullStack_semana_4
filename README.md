@@ -1,6 +1,11 @@
 # Controle de Negociações
 Este é um projeto simples para controle de negociações em JavaScript, que permite registrar negociações com data, quantidade e valor, e filtrar as negociações por valor.
 
+<br>
+
+### Link para testar aqui &#x2192; [GitPage](https://fhoinaski.github.io/FullStack_semana_4/)
+
+
 ## Tecnologias Utilizadas
 - JavaScript
 - HTML
