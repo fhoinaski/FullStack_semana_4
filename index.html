@@ -8,23 +8,27 @@
 <body>
 <section class="container-principal">
   <div class="box-form">
-    <h1>Minhas açoes</h1>
+    <h1>Registro vendas</h1>
+    <p>Resgitre aqui suas vendas de ações</p>
     <form class="formulario">
       <label for="data-transacao">Data da transação</label>
-      <input id="data-transacao" type="date">
+      <input id="data-transacao" type="date" required>
       <br>
       <label for="quantidade-vendida">Quantidade de ações vendidas</label>
-      <input id="quantidade-vendida" type="number" min="1" max="100">
+      <input id="quantidade-vendida" type="number" min="1" max="100" required>
       <br>
-      <label for="valor-negociacao">Valor da negociação</label>
-      <input id="valor-negociacao" type="number" min="0" max="1000000.0">
+      <label for="valor-negociacao">Valor unitário por ação vendida</label>
+      <input id="valor-negociacao" type="number" min="0" max="1000000.0" required>
       <br>
       <button id="registrar-negociacao" type="submit">Registrar negociação</button>
-      <button id="filtrar">Filtrar</button>
-      <input id="valorFiltro" type="number" placeholder="informe o valor">
+      <div class="box-filter">
+        <button id="filtrar">Filtrar</button>
+        <input id="valorFiltro" type="number" placeholder="Acima de:"></div>
     </form>
+
   </div>
   <div class="container-tabela">
+    <h2>Registro de operações</h2>
     <table>
       <thead>
       <th>Data</th>

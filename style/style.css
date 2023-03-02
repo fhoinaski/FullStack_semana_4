@@ -2,16 +2,159 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F7F7F8;
+    background-color: #F3f4f6;
 
 }
 .container-principal{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     width: 600px;
-    height: 800px;
+    height: auto;
     background: #ffffff;
     margin-top: 20px;
     border-radius: 20px;
     padding: 15px;
+}
+.box-form h1,p{
+    text-align: center;
+}
+.box-form p{
+    color: #0a3394;
+    font-family:"Lucida Sans Typewriter" ;
+}
+.box-form h1{
+    font-family: 'Open Sans', sans-serif;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    background-color: #F3f4f6;
+    padding: 30px;
+    border-radius: 20px;
+
+}
+.formulario input {
+    background-color: #eee;
+    border: none;
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: #0a3394;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+    margin: 5px;
+    text-align: center;
+}
+
+.formulario input:focus {
+    outline-color: #88a9fc;
+}
+.formulario label{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+
+#registrar-negociacao{
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, rgba(4, 0, 255, 0.43), #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: "Open Sans", serif;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#registrar-negociacao:hover,.box-filter button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+
+.box-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+}
+.box-filter button
+{
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, rgba(4, 0, 255, 0.43), #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: "Open Sans", serif;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    cursor: pointer;
+}
+.box-filter input{
+    background-color: #eee;
+    border: none;
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    width: 20em;
+    height: 2em;
+    border-radius: 1rem;
+    color: #0a3394;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+    text-align: center;
+}
+
+.container-tabela{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    background-color: #F3f4f6;
+    padding: 30px;
+    border-radius: 20px;
+    font-family: "Open Sans";
+}
+.container-tabela table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 14px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+th {
+    background-color: #ffffff;
+    font-weight: bold;
+}
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #05bada66;
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
 }

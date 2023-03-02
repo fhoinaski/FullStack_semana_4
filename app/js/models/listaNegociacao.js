@@ -11,10 +11,10 @@ get negociacoes(){
     return[].concat(this.#negociacoes);
 }
 
+//metodo para filtrar os valores recebidos no input filtro e retornar umalista com negociacios de valores iguais ou
+// aicma do informado
     filtrarNegociacoesPorValor(valorMinimo) {
-        return this.#negociacoes.filter(negociacao => negociacao.valor >= valorMinimo);
+        return this.#negociacoes.filter(negociacao => negociacao.valorTotal >= valorMinimo);
     }
-    forEach(fn) {
-        this.#negociacoes.forEach(fn);
-    }
+
 }
