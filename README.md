@@ -21,9 +21,10 @@ Este é um projeto simples para controle de negociações em JavaScript, que per
 │   ├── models
 │   │   ├── ListaNegociacao.js
 │   │   └── Negociacao.js
-│   └── views
-│       └── NegociacoesView.js
-│       
+│   ├── views
+│   │   └── NegociacoesView.js
+│   └── main
+│       └── programa.js
 ├── css
 │   └── estilo.css
 ├── index.html
