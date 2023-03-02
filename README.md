@@ -38,10 +38,15 @@ interface e faz a lógica de negócio da aplicação.
 - **js/models/ListaNegociacao.js:**  Contém a classe ListaNegociacao, que representa uma lista de negociações.
 
 - js/models/Negociacao.js: Contém a classe Negociacao, que representa uma negociação com data, quantidade e valor.
-- **js/views/MensagemView.js:** Contém a classe MensagemView, que representa a view de mensagem da aplicação.
+
 - **js/views/NegociacoesView.js:** Contém a classe NegociacoesView, que representa a view de negociações da aplicação.
-css/estilo.css: Arquivo CSS para estilização da página.
-index.html: Página HTML da aplicação.
+
+- **js/main/programa.js:** Contém os metodos click tanto para o botão criar negocio quanto para criar o filtro 
+  chamando os metodos filtrar, tambem coloca um limitador para os inputs de quantidade
+
+- **css/estilo.css:** Arquivo CSS para estilização da página.
+
+- **index.html:** Página HTML da aplicação.
 
 ## Como Executar
 Abra o arquivo index.html em um navegador web. A partir daí, é possível registrar negociações e filtrar as negociações por valor.
